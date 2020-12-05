@@ -1,8 +1,23 @@
 use std::io::Result;
 
-pub fn main() -> Result<()> {
+use crate::Input;
+
+pub fn main(_input: &Input) -> Result<()> {
     Ok(())
 }
 
 #[cfg(test)]
-mod tests {}
+mod tests {
+    use crate::parse_input;
+
+    use super::*;
+
+    const EXAMPLE_DATA: &'static str = "
+        example
+    ";
+
+    #[test]
+    fn it_gets_the_example_correct() {
+        assert_eq!(main(&parse_input(&EXAMPLE_DATA)).unwrap(), ());
+    }
+}
