@@ -1,0 +1,20 @@
+name = "AOC template"
+description = "A template for adding a specific day to AOC"
+kickstart_version = 1
+
+[[variables]]
+name = "day"
+default = "01"
+prompt = "What AOC day?"
+validation = "^([0-1][0-9])$"
+
+[[variables]]
+name = "author"
+default = "Dennis Pettersson <mail@dennispettersson.se>"
+prompt = "Author of package?"
+
+[[variables]]
+name = "rust_edition"
+default = "2018"
+prompt = "Rust edition?"
+choices = ["2018", "2015"]
