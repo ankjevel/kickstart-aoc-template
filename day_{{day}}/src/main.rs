@@ -5,6 +5,5 @@ fn main() -> Result<()> {
 }
 
 #[cfg(test)]
-mod tests {
-    use super::*;
-}
+mod tests {}
+
