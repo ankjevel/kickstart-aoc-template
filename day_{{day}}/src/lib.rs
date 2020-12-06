@@ -8,10 +8,7 @@ pub fn parse_input(input: &str) -> Input {
         .lines()
         .map(str::trim)
         .filter(|string| !string.is_empty())
-        .map(|part| {
-            //
-            part.to_owned()
-        })
+        .map(str::to_owned)
         .collect()
 }
 

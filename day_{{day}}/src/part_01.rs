@@ -17,7 +17,8 @@ mod tests {
     ";
 
     #[test]
-    fn it_gets_the_example_correct() {
-        assert_eq!(main(&parse_input(&EXAMPLE_DATA)).unwrap(), ());
+    fn it_gets_the_example_correct() -> Result<()> {
+        assert_eq!(main(&parse_input(&EXAMPLE_DATA))?, ());
+        Ok(())
     }
 }
