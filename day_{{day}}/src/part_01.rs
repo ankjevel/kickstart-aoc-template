@@ -12,13 +12,13 @@ mod tests {
 
     use super::*;
 
-    const EXAMPLE_DATA: &'static str = "
+    const EXAMPLE_DATA: &str = "
         example
     ";
 
     #[test]
     fn it_gets_the_example_correct() -> Result<()> {
-        assert_eq!(main(&parse_input(&EXAMPLE_DATA))?, ());
+        assert_eq!(main(&parse_input(EXAMPLE_DATA))?, ());
         Ok(())
     }
 }
