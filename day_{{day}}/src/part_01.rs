@@ -2,8 +2,8 @@ use std::io::Result;
 
 use crate::Input;
 
-pub fn main(_input: &Input) -> Result<()> {
-    Ok(())
+pub fn main(_input: &Input) -> Result<usize> {
+    Ok(0)
 }
 
 #[cfg(test)]
@@ -18,7 +18,7 @@ mod tests {
 
     #[test]
     fn it_gets_the_example_correct() -> Result<()> {
-        assert_eq!(main(&parse_input(EXAMPLE_DATA))?, ());
+        assert_eq!(main(&parse_input(EXAMPLE_DATA))?, 0);
         Ok(())
     }
 }
