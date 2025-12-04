@@ -15,6 +15,6 @@ prompt = "Author of package?"
 
 [[variables]]
 name = "rust_edition"
-default = "2021"
+default = "2024"
 prompt = "Rust edition?"
-choices = ["2021", "2018", "2015"]
+choices = ["2024", "2021", "2018", "2015"]
