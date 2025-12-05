@@ -12,9 +12,7 @@ mod tests {
 
     use super::*;
 
-    const EXAMPLE_DATA: &str = "
-        example
-    ";
+    const EXAMPLE_DATA: &str = include_str!("../../input/day_{{day}}_example");
 
     #[test]
     fn it_gets_the_example_correct() -> Result<()> {
