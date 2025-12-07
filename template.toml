@@ -10,7 +10,7 @@ validation = "^([0-1][0-9])$"
 
 [[variables]]
 name = "author"
-default = "Dennis Pettersson <mail@dennispettersson.se>"
+default = "Dennis Pettersson <dennis.pettersson@gmail.com>"
 prompt = "Author of package?"
 
 [[variables]]
